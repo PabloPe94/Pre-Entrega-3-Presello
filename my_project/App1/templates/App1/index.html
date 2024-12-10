@@ -1,0 +1,58 @@
+{% extends 'App1/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'App1/assets/img/p_interiores.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Plantas de Interior</h2>
+                    <p>Las plantas de interior son plantas ornamentales que se cultivan en espacios cerrados, como casas, oficinas o departamentos, donde las condiciones ambientales son controladas por el ser humano</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{%static 'App1/assets/img/p_exterior.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Plantas de Exterior</h2>
+                    <p>planta que se cultiva al aire libre, en el suelo, en espacios como jardines, terrazas, patios y balcones. Se caracterizan por ser más resistentes a las condiciones adversas, como el frío, el calor, la humedad y las variaciones climáticas, que las plantas de interior.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{%static 'App1/assets/img/p_carnivoras.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Plantas Carnivoras</h2>
+                    <p>Una planta carnívora es una planta que obtiene parte o la mayoría de sus necesidades nutricionales mediante la captura y el consumo de protozoos y animales, especialmente insectos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+{% endblock %}
+    
+{% block title %}
+Groovy Grow - Inicio        
+{% endblock  %}

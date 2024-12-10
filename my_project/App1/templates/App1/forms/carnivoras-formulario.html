@@ -1,0 +1,49 @@
+{% extends 'App1/base.html' %}
+
+{% block content %}
+    
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-4">
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                  <label class="form-label">Nombre Cientifico</label>
+                  <input name="nombre_cientifico" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Nombre Comun</label>
+                  <input name="nombre_comun" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Tipo de Clima</label>
+                  <input name="tipo_clima" type="text" class="form-control">
+                </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Riego Semanal</label>
+                  <input name="riego_semanal" type="number" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Cuidados Especiales</label>
+                  <input name="cuidados_especiales" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Alimentacion</label>
+                    <input name="alimentacion" type="text" class="form-control">
+                  </div>
+                <div class="mb-3">
+                    <label class="form-label">Foto</label>
+                    <input name="foto" type="file" class="form-control" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ingresar Planta</button>
+          
+          </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
